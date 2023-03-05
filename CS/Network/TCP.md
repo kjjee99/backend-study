@@ -3,6 +3,7 @@
 ### 목차
 * [특징](#특징)
 * [Header](#tcp-header)
+* [handshaking](#tcp-3-way-handshaking--4-way-handshaking)
 
 > Transmission Control Protocol
 >
