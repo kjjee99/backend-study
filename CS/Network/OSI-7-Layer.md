@@ -1,5 +1,5 @@
 # OSI 7 Layer
----
+
 ### 목차
 * [등장 배경](#등장배경)
 * [작동 원리](#작동-원리)
@@ -21,7 +21,7 @@
 ### 1. Application Layer
 - 서비스를 제공하는 방법 구현
 - 단위: Message
-#### - Function
+#### 📍 Function
 1. Network Virtual Terminal
 2. FTAM(File Transfer Access and Management)
 3. Mail Services
@@ -30,7 +30,7 @@
 ### 2. Presentation Layer
 - 데이터를 통신에 적절한 형태로 변환
 - 단위: Message
-#### - Function
+#### 📍 Function
 1. Translation
   <br>ex. ASCII to EBCDIC
 2. Encryption/Decryption
@@ -40,12 +40,12 @@
 - Session 연결 및 유지, 인가, 보안
 - 단위: Message
 - 장치 : Gateway
-#### - Function
+#### 📍 Function
 1. Session establishment, maintenance, and termination
 2. Synchronization : 데이터의 동기화 지점을 고려해 체크 포인트를 데이터에 추가할 수 있음 -> 오류 식별에 도움
 3. Dialog Controller : 반이중 통식 혹은 전이중 방식 채택
 
-### 4. Transport Layer
+### 🌟 4. Transport Layer
 - 완전한 메시지를 End-to-End 전달
 - 성공적인 데이터 전송과 오류 발생 시 재전송
 - 단위 : `segment(TCP)` or `datagram(UDP)`
@@ -54,7 +54,7 @@
 - 출발지와 목적지의 **port number**가 헤더에 포함되어 있음
 #### :arrow_left: At `receiver`'s side
 - 순서에 맞춰 segmented 데이터를 재조립
-#### - Function
+#### 📍 Function
 1. Segmentation and Reassembly : 더 작은 유닛으로 메시지를 나누거나 재조립함
 2. Service Point Addressing : 정확한 프로세스로 전달하기 위해 **service point address** 혹은 **port address**를 포함함 -> 정확성을 높이기 위함
 #### - Service
@@ -70,7 +70,7 @@
 - **IP 주소**가 헤더에 위치함
 - 단위 : `packet`
 - 장치 : Router
-#### - Function
+#### 📍 Function
 1. Routing : 목적지에 어떤 경로가 적합한지 결정
 2. Logical Addressing : 각 장치마다 고유한 번호를 부여하기 위함
 
@@ -95,7 +95,7 @@
 #### 2. MAC(Media Access Control)
 - 어떻게 프레임을 전송할 것인지 정의
 - 물리 게층의 토폴로지나 기타 특성에 맞추어주는 **제어** 담당
-#### - Function
+#### 📍 Function
 1. Framing : 송신자가 수신자에게 의미있는 비트 세트를 전송할 수 있는 방법 제공
 2. Physical Addressing : 프레임 생성 후 물리적 주소(MAC address)를 더함
 3. Error Control : 손상되거나 손실된 프레임을 발견하고 재전송
@@ -106,7 +106,7 @@
 - 신호를 받아 0과 1로 변환시킴
 - 단위 : `bit`
 - 장치 : Hub, Repeater, Modem, Cables
-#### - Functions
+#### 📍 Functions
 1. Bit Synchronization : 수신자와 송신자의 동기화 제어
 2. Bit rate control : 전송 속도 조절
 3. Physical topologies : 서로 다른 장치/노드가 네트워크에 배열되는 방식 지정
